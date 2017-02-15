@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+
+.menu{
+	width: 1000px;
+	height: 0px;
+	padding: 0;
+	margin: 0 auto;
+}
+
+.menu ul{
+	padding: 0;
+	margin: 0;	
+}
+.menu ul li{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	float: left;
+	position: relative;	
+}
+.menu ul li a{
+	background: #CCC;
+	color: #000;
+	line-height: 30px;
+	display: block;	
+	padding: 0 20px;
+	text-decoration: none;
+}
+.menu ul li a.down, .menu ul li a:hover.down{
+	background-repeat: no-repeat;
+	background-position: 95% 50%;	
+}
+.menu ul li a:hover{
+	background:#900;
+	color:#000;	
+}
+.menu ul li ul{
+	visibility: hidden;
+	position: absolute;	
+}
+.menu ul li:hover ul{
+	visibility: visible;	
+}
+.menu ul li ul li{
+	width: 120px;	
+}
+.menu ul li ul li ul li{
+	left: 120px;
+	top: -30px;	
+}
+.menu ul li:hover ul li ul{
+	visibility: hidden;	
+}
+.menu ul li ul li:hover ul{
+	visibility: visible;	
+}
+.menu ul li ul li a.right, .menu ul li ul li  a:hover.right{
+	background-image:url(down.gif);
+	background-repeat: no-repeat;
+	background-position: 95% 50%;	
+}
